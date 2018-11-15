@@ -67,7 +67,7 @@ main(cli)
 		})
 	);
 
-// handle unhandled rejections
+// Handle unhandled rejections
 process.on('unhandledRejection', (reason, promise) => {
 	if (reason.type === pkg.name) {
 		process.exit(1);
@@ -76,6 +76,7 @@ process.on('unhandledRejection', (reason, promise) => {
 	throw reason;
 });
 
+/* eslint-disable */
 /* const fs = require('fs');
 const path = require('path');
 const url = require('url');
@@ -554,3 +555,4 @@ process.on('unhandledRejection', (reason, promise) => {
 	throw reason;
 });
 */
+/* eslint-enable */
