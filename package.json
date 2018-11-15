@@ -1,6 +1,6 @@
 {
-  "name": "jsonlint-cli",
-  "version": "1.0.1",
+  "name": "jsonlint-cli-agt",
+  "version": "1.0.2",
   "description": "cli wrapper for jsonlint",
   "main": "index.js",
   "scripts": {
@@ -29,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/marionebl/jsonlint-cli.git"
+    "url": "git+https://github.com/aLANparty/jsonlint-cli.git"
   },
   "keywords": [
     "jsonlint",
@@ -37,14 +37,14 @@
     "jsonschema"
   ],
   "author": {
-    "name": "Mario Nebl",
-    "email": "hello@herebecode.com"
+    "name": "Alan Taylor",
+    "email": "tayloral23@gmail.com"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/marionebl/jsonlint-cli/issues"
+    "url": "https://github.com/aLANparty/jsonlint-cli/issues"
   },
-  "homepage": "https://github.com/marionebl/jsonlint-cli#readme",
+  "homepage": "https://github.com/aLANparty/jsonlint-cli#readme",
   "devDependencies": {
     "@commitlint/cli": "^7.2.1",
     "@commitlint/config-conventional": "^7.1.2",

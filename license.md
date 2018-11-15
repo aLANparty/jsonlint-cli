@@ -1,5 +1,7 @@
 The MIT License (MIT)
 
+Copyright (c) 2018 Alan Taylor
+
 Copyright (c) 2016 Mario Nebl
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -21,4 +23,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ---
-Copyright 2016 by [Mario Nebl](https://github.com/marionebl) and [contributors](./graphs/contributors). Released under the [MIT license]('./license.md').
+Copyright 2018 by [Alan Taylor](https://github.com/aLANparty) and [contributors](https://github.com/aLANparty/jsonlint-cli/graphs/contributors). Released under the [MIT license]('https://github.com/aLANparty/jsonlint-cli/blob/master/license.md').
+
+Copyright 2016 by [Mario Nebl](https://github.com/marionebl) and [contributors](https://github.com/marionebl/jsonlint-cli/graphs/contributors). Released under the [MIT license]('https://github.com/marionebl/jsonlint-cli/blob/master/license.md').
