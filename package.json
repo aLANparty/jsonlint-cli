@@ -52,19 +52,19 @@
     "parallelshell": "2.0.0"
   },
   "dependencies": {
-    "cli-rc": "1.0.12",
-    "core-js": "2.1.5",
-    "denodeify": "1.2.1",
-    "get-stdin": "5.0.1",
-    "globby": "4.0.0",
-    "isomorphic-fetch": "2.2.1",
-    "jjv": "1.0.2",
-    "jsonlint": "1.6.2",
-    "lodash": "4.6.1",
-    "meow": "3.7.0",
-    "minimatch": "3.0.4",
-    "mkdirp": "0.5.1",
-    "omni-fetch": "0.1.0",
-    "path-exists": "2.1.0"
+    "cli-rc": "^1.0.12",
+    "core-js": "^2.5.7",
+    "denodeify": "^1.2.1",
+    "get-stdin": "^6.0.0",
+    "globby": "^8.0.1",
+    "isomorphic-fetch": "^2.2.1",
+    "jjv": "^1.0.2",
+    "jsonlint": "^1.6.3",
+    "lodash": "^4.17.11",
+    "meow": "^3.7.0",
+    "minimatch": "^3.0.4",
+    "mkdirp": "^0.5.1",
+    "omni-fetch": "^0.2.3",
+    "path-exists": "^3.0.0"
   }
 }
