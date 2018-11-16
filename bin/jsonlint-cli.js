@@ -1,17 +1,17 @@
 #!/usr/bin/env node
 const merge = require('lodash').merge;
 
-const cli = require('./library/cli');
-const listFiles = require('./library/list-files');
-const fetchSchema = require('./library/fetch-schema');
-const getConfiguration = require('./library/get-configuration');
-const getInput = require('./library/get-input');
-const resolveKeys = require('./library/resolve-keys');
-const lint = require('./library/lint');
-const format = require('./library/format');
-const print = require('./library/print');
-const filter = require('./library/filter');
-const pkg = require('./package');
+const cli = require('../lib/cli');
+const listFiles = require('../lib/list-files');
+const fetchSchema = require('../lib/fetch-schema');
+const getConfiguration = require('../lib/get-configuration');
+const getInput = require('../lib/get-input');
+const resolveKeys = require('../lib/resolve-keys');
+const lint = require('../lib/lint');
+const format = require('../lib/format');
+const print = require('../lib/print');
+const filter = require('../lib/filter');
+const pkg = require('../package');
 
 // Main program
 function main(options) {

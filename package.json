@@ -4,15 +4,20 @@
   "description": "cli wrapper for jsonlint",
   "main": "index.js",
   "scripts": {
+    "//-------------------------------------------------------------commit": "",
     "commit": "git-cz",
+    "//------------------------------------------------------------release": "",
     "changelog": "conventional-changelog --preset angular --infile changelog.md --same-file --output-unreleased",
     "push": "git push && git push --tags && hub release create \"v$(cat .git/RELEASE_VERSION.tmp)\" --message=\"v$(cat .git/RELEASE_VERSION.tmp)\n$(cat .git/COMMITMSG.tmp)\" && npm publish && rm .git/RELEASE_VERSION.tmp && rm .git/COMMITMSG.tmp",
     "release": "npm version $(conventional-recommended-bump -p angular)",
-    "lint": "eslint index.js",
-    "test": "npm run lint; node index.js **/*.json *.json",
     "preversion": "npm test",
     "version": "npm run changelog && git add . && echo \"$(conventional-changelog -p angular)\" > .git/COMMITMSG.tmp",
-    "postversion": "echo $(git log -1 --pretty=%B HEAD^..HEAD) > .git/RELEASE_VERSION.tmp && git tag -d v$(cat .git/RELEASE_VERSION.tmp) && git commit --amend -m \"chore(release): $(cat .git/RELEASE_VERSION.tmp)\n$(cat .git/COMMITMSG.tmp)\" && git tag -a v$(cat .git/RELEASE_VERSION.tmp) -m \"$(cat .git/COMMITMSG.tmp)\""
+    "postversion": "echo $(git log -1 --pretty=%B HEAD^..HEAD) > .git/RELEASE_VERSION.tmp && git tag -d v$(cat .git/RELEASE_VERSION.tmp) && git commit --amend -m \"chore(release): $(cat .git/RELEASE_VERSION.tmp)\n$(cat .git/COMMITMSG.tmp)\" && git tag -a v$(cat .git/RELEASE_VERSION.tmp) -m \"$(cat .git/COMMITMSG.tmp)\"",
+    "//---------------------------------------------------------------lint": "",
+    "lint:eslint": "eslint index.js",
+    "lint:jsonlint": "node bin/jsonlint-cli.js -s http://json.schemastore.org/package './package.json'",
+    "//---------------------------------------------------------------test": "",
+    "test": "cd test && node ../bin/jsonlint-cli.js './**/*.json' './*.json'"
   },
   "husky": {
     "hooks": {
@@ -25,7 +30,7 @@
     }
   },
   "bin": {
-    "jsonlint-cli": "./index.js"
+    "jsonlint-cli": "./bin/jsonlint-cli.js"
   },
   "repository": {
     "type": "git",
