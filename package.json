@@ -14,8 +14,9 @@
     "version": "npm run changelog && git add . && echo \"$(conventional-changelog -p angular)\" > .git/COMMITMSG.tmp",
     "postversion": "echo $(git log -1 --pretty=%B HEAD^..HEAD) > .git/RELEASE_VERSION.tmp && git tag -d v$(cat .git/RELEASE_VERSION.tmp) && git commit --amend -m \"chore(release): $(cat .git/RELEASE_VERSION.tmp)\n$(cat .git/COMMITMSG.tmp)\" && git tag -a v$(cat .git/RELEASE_VERSION.tmp) -m \"$(cat .git/COMMITMSG.tmp)\"",
     "//---------------------------------------------------------------lint": "",
-    "lint:eslint": "eslint index.js",
+    "lint:eslint": "eslint --config .eslintrc --ignore-path .eslintignore './'",
     "lint:jsonlint": "node bin/jsonlint-cli.js -s http://json.schemastore.org/package './package.json'",
+    "lint": "npm run lint:eslint; npm run lint:jsonlint",
     "//---------------------------------------------------------------test": "",
     "test": "cd test && node ../bin/jsonlint-cli.js './**/*.json' './*.json'"
   },
