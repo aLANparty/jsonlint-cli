@@ -1,0 +1,13 @@
+**/.git/**
+**/.svn/**
+**/bin/**
+**/bower_components/**
+**/build-extra/**
+**/build/**
+**/bundles/**
+**/cache/**
+**/dist/**
+**/docs/**
+**/node_modules/**
+**/var/**
+**/vendor/**
