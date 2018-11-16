@@ -1,0 +1,4 @@
+{
+    "validate": "./schema.json",
+    "ignore": ["schema.json"]
+}
