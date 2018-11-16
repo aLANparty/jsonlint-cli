@@ -1,3 +1,15 @@
+<a name="1.0.4"></a>
+## [1.0.4](https://github.com/aLANparty/jsonlint-cli/compare/v1.0.3...v1.0.4) (2018-11-16)
+
+
+### Package Maintenance
+
+* restructure project
+* add more testing
+* update dependencies to fix all npm audit errors and warnings
+
+
+
 <a name="1.0.3"></a>
 ## [1.0.3](https://github.com/aLANparty/jsonlint-cli/compare/v1.0.2...v1.0.3) (2018-11-15)
 
