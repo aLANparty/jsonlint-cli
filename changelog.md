@@ -1,3 +1,14 @@
+<a name="1.1.0"></a>
+## [1.1.0](https://github.com/aLANparty/jsonlint-cli/compare/v1.0.5...v1.1.0) (2019-05-02)
+
+
+### Features
+
+* switch to node-glob to fix globs with braces.
+* update dependencies
+
+
+
 <a name="1.0.5"></a>
 ## [1.0.5](https://github.com/aLANparty/jsonlint-cli/compare/v1.0.4...v1.0.5) (2018-11-19)
 
